@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: 57ecd134bf2cd734fa9c954f40237ae6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5971865685984345354
+    second: TimBasicMovementSpriteSheet_0
+  - first:
+      213: -9085999551687167749
+    second: TimBasicMovementSpriteSheet_1
+  - first:
+      213: 5431240559020107280
+    second: TimBasicMovementSpriteSheet_2
+  - first:
+      213: 3305754657571801725
+    second: TimBasicMovementSpriteSheet_3
+  - first:
+      213: -1560054157794517339
+    second: TimBasicMovementSpriteSheet_4
+  - first:
+      213: 867247813406181063
+    second: TimBasicMovementSpriteSheet_5
+  - first:
+      213: 4530805898178050706
+    second: TimBasicMovementSpriteSheet_6
+  - first:
+      213: 6159481050399261691
+    second: TimBasicMovementSpriteSheet_7
+  - first:
+      213: 2525781822069292405
+    second: TimBasicMovementSpriteSheet_8
+  - first:
+      213: 7013906864743135171
+    second: TimBasicMovementSpriteSheet_9
+  - first:
+      213: 6930309891922388749
+    second: TimBasicMovementSpriteSheet_10
+  - first:
+      213: -5651022574988185170
+    second: TimBasicMovementSpriteSheet_11
+  - first:
+      213: 4460212885397553257
+    second: TimBasicMovementSpriteSheet_12
+  - first:
+      213: -2796606285551714608
+    second: TimBasicMovementSpriteSheet_13
+  - first:
+      213: -2153465896500292509
+    second: TimBasicMovementSpriteSheet_14
+  - first:
+      213: -7367925256629529671
+    second: TimBasicMovementSpriteSheet_15
+  - first:
+      213: 962069448860386789
+    second: TimBasicMovementSpriteSheet_16
+  - first:
+      213: -8283767931869032667
+    second: TimBasicMovementSpriteSheet_17
+  - first:
+      213: 1797558776873255054
+    second: TimBasicMovementSpriteSheet_18
+  - first:
+      213: -5531402674705517345
+    second: TimBasicMovementSpriteSheet_19
+  - first:
+      213: -2330596010369239459
+    second: TimBasicMovementSpriteSheet_20
+  - first:
+      213: 4659385527437606764
+    second: TimBasicMovementSpriteSheet_21
+  - first:
+      213: -8972122123846787868
+    second: TimBasicMovementSpriteSheet_22
+  - first:
+      213: 4768009787883035402
+    second: TimBasicMovementSpriteSheet_23
+  - first:
+      213: -6040368183156741379
+    second: TimBasicMovementSpriteSheet_24
+  - first:
+      213: 9030877527992654140
+    second: TimBasicMovementSpriteSheet_25
+  - first:
+      213: -1644220725587133202
+    second: TimBasicMovementSpriteSheet_26
+  - first:
+      213: 3052977287287725130
+    second: TimBasicMovementSpriteSheet_27
+  - first:
+      213: 7982333089280493191
+    second: TimBasicMovementSpriteSheet_28
+  - first:
+      213: 1712127433241456079
+    second: TimBasicMovementSpriteSheet_29
+  - first:
+      213: -1698447986723929569
+    second: TimBasicMovementSpriteSheet_30
+  - first:
+      213: -3276123047039244441
+    second: TimBasicMovementSpriteSheet_31
+  - first:
+      213: 5807043527984170466
+    second: TimBasicMovementSpriteSheet_32
+  - first:
+      213: -5085427831039670483
+    second: TimBasicMovementSpriteSheet_33
+  - first:
+      213: -5318739976336863874
+    second: TimBasicMovementSpriteSheet_34
+  - first:
+      213: -3897735809805796798
+    second: TimBasicMovementSpriteSheet_35
+  - first:
+      213: 890253935044922163
+    second: TimBasicMovementSpriteSheet_36
+  - first:
+      213: 3210695204251187424
+    second: TimBasicMovementSpriteSheet_37
+  - first:
+      213: -7234004473277333656
+    second: TimBasicMovementSpriteSheet_38
+  - first:
+      213: -3453415015917269631
+    second: TimBasicMovementSpriteSheet_39
+  - first:
+      213: 4939373978894278222
+    second: TimBasicMovementSpriteSheet_40
+  - first:
+      213: -6723122142388355111
+    second: TimBasicMovementSpriteSheet_41
+  - first:
+      213: 5819722417392286045
+    second: TimBasicMovementSpriteSheet_42
+  - first:
+      213: 5263979199747638868
+    second: TimBasicMovementSpriteSheet_43
+  - first:
+      213: 3301874209025128326
+    second: TimBasicMovementSpriteSheet_44
+  - first:
+      213: -7937163585779647702
+    second: TimBasicMovementSpriteSheet_45
+  - first:
+      213: 9134180658820329352
+    second: TimBasicMovementSpriteSheet_46
+  - first:
+      213: -5828098165738253315
+    second: TimBasicMovementSpriteSheet_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f20f848ccbaf1da0800000000000000
+      internalID: -5971865685984345354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0f3542c8b08e180800000000000000
+      internalID: -9085999551687167749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01666123384af5b40800000000000000
+      internalID: 5431240559020107280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a092fa85660ed20800000000000000
+      internalID: 3305754657571801725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae594e4203995ae0800000000000000
+      internalID: -1560054157794517339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c64f4a9a45190c00800000000000000
+      internalID: 867247813406181063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ab52b85f7a0ee30800000000000000
+      internalID: 4530805898178050706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf34cc9816fda7550800000000000000
+      internalID: 6159481050399261691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d349c5f216d0320800000000000000
+      internalID: 2525781822069292405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c730b8d127665160800000000000000
+      internalID: 7013906864743135171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07e86bd0286d2060800000000000000
+      internalID: 6930309891922388749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1bd1098e88391b0800000000000000
+      internalID: -5651022574988185170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960cdb0fcfbd5ed30800000000000000
+      internalID: 4460212885397553257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0deb01d76657039d0800000000000000
+      internalID: -2796606285551714608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3649e2b3d2a5d12e0800000000000000
+      internalID: -2153465896500292509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3d7fa140fdfb990800000000000000
+      internalID: -7367925256629529671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e544940115f95d00800000000000000
+      internalID: 962069448860386789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f8c2b84f42a0d80800000000000000
+      internalID: -8283767931869032667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e808a660f2632f810800000000000000
+      internalID: 1797558776873255054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd43880f2928c33b0800000000000000
+      internalID: -5531402674705517345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56bffec64f08afd0800000000000000
+      internalID: -2330596010369239459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fb382637679a040800000000000000
+      internalID: 4659385527437606764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec50b6f67e9c7380800000000000000
+      internalID: -8972122123846787868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b9a5cd3af5b2240800000000000000
+      internalID: 4768009787883035402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfaee52042d4c2ca0800000000000000
+      internalID: -6040368183156741379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c395f0a934f145d70800000000000000
+      internalID: 9030877527992654140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec3b0726fd8e29e0800000000000000
+      internalID: -1644220725587133202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cde1cdaaa5e5a20800000000000000
+      internalID: 3052977287287725130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786096907a1f6ce60800000000000000
+      internalID: 7982333089280493191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdee8c44d2b2c710800000000000000
+      internalID: 1712127433241456079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12c7d90e86ed68e0800000000000000
+      internalID: -1698447986723929569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76761c4427fd882d0800000000000000
+      internalID: -3276123047039244441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e54ab85253c69050800000000000000
+      internalID: 5807043527984170466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27cef7d45eec69b0800000000000000
+      internalID: -5085427831039670483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d85c1eb2a0036b0800000000000000
+      internalID: -5318739976336863874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ab43c9ee578e9c0800000000000000
+      internalID: -3897735809805796798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b0f36bc31da5c00800000000000000
+      internalID: 890253935044922163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8317bf64eae8c20800000000000000
+      internalID: 3210695204251187424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fb7ba4247ab9b90800000000000000
+      internalID: -7234004473277333656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d404a07510310d0800000000000000
+      internalID: -3453415015917269631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e1dc0c67e2c8440800000000000000
+      internalID: 4939373978894278222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dff069380ca2b2a0800000000000000
+      internalID: -6723122142388355111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d597b0454bec3c050800000000000000
+      internalID: 5819722417392286045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456c00241396d0940800000000000000
+      internalID: 5263979199747638868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68777f9591d92dd20800000000000000
+      internalID: 3301874209025128326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b307985c789d190800000000000000
+      internalID: -7937163585779647702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88faa3b0ae023ce70800000000000000
+      internalID: 9134180658820329352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimBasicMovementSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3d01bc89f6e1fa0800000000000000
+      internalID: -5828098165738253315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8f8f5a8dd57987d4fb53f1dbd7726a6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TimBasicMovementSpriteSheet_0: -5971865685984345354
+      TimBasicMovementSpriteSheet_1: -9085999551687167749
+      TimBasicMovementSpriteSheet_10: 6930309891922388749
+      TimBasicMovementSpriteSheet_11: -5651022574988185170
+      TimBasicMovementSpriteSheet_12: 4460212885397553257
+      TimBasicMovementSpriteSheet_13: -2796606285551714608
+      TimBasicMovementSpriteSheet_14: -2153465896500292509
+      TimBasicMovementSpriteSheet_15: -7367925256629529671
+      TimBasicMovementSpriteSheet_16: 962069448860386789
+      TimBasicMovementSpriteSheet_17: -8283767931869032667
+      TimBasicMovementSpriteSheet_18: 1797558776873255054
+      TimBasicMovementSpriteSheet_19: -5531402674705517345
+      TimBasicMovementSpriteSheet_2: 5431240559020107280
+      TimBasicMovementSpriteSheet_20: -2330596010369239459
+      TimBasicMovementSpriteSheet_21: 4659385527437606764
+      TimBasicMovementSpriteSheet_22: -8972122123846787868
+      TimBasicMovementSpriteSheet_23: 4768009787883035402
+      TimBasicMovementSpriteSheet_24: -6040368183156741379
+      TimBasicMovementSpriteSheet_25: 9030877527992654140
+      TimBasicMovementSpriteSheet_26: -1644220725587133202
+      TimBasicMovementSpriteSheet_27: 3052977287287725130
+      TimBasicMovementSpriteSheet_28: 7982333089280493191
+      TimBasicMovementSpriteSheet_29: 1712127433241456079
+      TimBasicMovementSpriteSheet_3: 3305754657571801725
+      TimBasicMovementSpriteSheet_30: -1698447986723929569
+      TimBasicMovementSpriteSheet_31: -3276123047039244441
+      TimBasicMovementSpriteSheet_32: 5807043527984170466
+      TimBasicMovementSpriteSheet_33: -5085427831039670483
+      TimBasicMovementSpriteSheet_34: -5318739976336863874
+      TimBasicMovementSpriteSheet_35: -3897735809805796798
+      TimBasicMovementSpriteSheet_36: 890253935044922163
+      TimBasicMovementSpriteSheet_37: 3210695204251187424
+      TimBasicMovementSpriteSheet_38: -7234004473277333656
+      TimBasicMovementSpriteSheet_39: -3453415015917269631
+      TimBasicMovementSpriteSheet_4: -1560054157794517339
+      TimBasicMovementSpriteSheet_40: 4939373978894278222
+      TimBasicMovementSpriteSheet_41: -6723122142388355111
+      TimBasicMovementSpriteSheet_42: 5819722417392286045
+      TimBasicMovementSpriteSheet_43: 5263979199747638868
+      TimBasicMovementSpriteSheet_44: 3301874209025128326
+      TimBasicMovementSpriteSheet_45: -7937163585779647702
+      TimBasicMovementSpriteSheet_46: 9134180658820329352
+      TimBasicMovementSpriteSheet_47: -5828098165738253315
+      TimBasicMovementSpriteSheet_5: 867247813406181063
+      TimBasicMovementSpriteSheet_6: 4530805898178050706
+      TimBasicMovementSpriteSheet_7: 6159481050399261691
+      TimBasicMovementSpriteSheet_8: 2525781822069292405
+      TimBasicMovementSpriteSheet_9: 7013906864743135171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
