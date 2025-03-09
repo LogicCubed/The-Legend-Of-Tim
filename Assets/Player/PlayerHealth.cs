@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxPlayerHealth;
-    private int currentHealth;
+    public int currentHealth;
     private bool isPlayerDead;
 
     private bool canTakeDamage = true;

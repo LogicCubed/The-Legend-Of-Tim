@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b575406cb45bd2a41839aca3f354e18c
+guid: d072af6aefc011d44a173a42707d48ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1218028653577246272
-    second: TimIdleFront1 (1)_0
+      213: 2350297403280568894
+    second: FullHeart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TimIdleFront1 (1)_0
+      name: FullHeart_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 22
-        height: 28
+        width: 16
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c9e7499461b81fe0800000000000000
-      internalID: -1218028653577246272
+      spriteID: e32bf0f290fed9020800000000000000
+      internalID: 2350297403280568894
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TimIdleFront1 (1)_0: -1218028653577246272
+      FullHeart_0: 2350297403280568894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
