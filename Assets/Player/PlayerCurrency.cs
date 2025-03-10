@@ -16,6 +16,16 @@ public class PlayerCurrency : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            CurrencyCount += 1;
+            Debug.Log("Collected a Coin! You now have " + CurrencyCount + " coins!");
+            Destroy(collision.gameObject);
+        }
+    }
+
     public void AddCurrency(int amount)
     {
         CurrencyCount += amount;

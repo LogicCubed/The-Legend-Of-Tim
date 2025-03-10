@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Explosive
   - Health
+  - Coin
   layers:
   - Default
   - TransparentFX

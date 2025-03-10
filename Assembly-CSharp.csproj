@@ -79,6 +79,7 @@
     <Compile Include="Assets\Environment\SpikeTrap\SpikeTrap.cs" />
     <Compile Include="Assets\UI\Keys\KeyDisplay.cs" />
     <Compile Include="Assets\Player\PlayerCurrency.cs" />
+    <Compile Include="Assets\UI\Coins\CoinDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
