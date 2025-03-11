@@ -21,7 +21,6 @@ public class PlayerCurrency : MonoBehaviour
         if (collision.gameObject.CompareTag("Coin"))
         {
             CurrencyCount += 1;
-            Debug.Log("Collected a Coin! You now have " + CurrencyCount + " coins!");
             Destroy(collision.gameObject);
         }
     }
@@ -29,13 +28,11 @@ public class PlayerCurrency : MonoBehaviour
     public void AddCurrency(int amount)
     {
         CurrencyCount += amount;
-        Debug.Log("You now have " + CurrencyCount + "Currency");
     }
 
     public void RemoveCurrency(int amount)
     {
         CurrencyCount -= amount;
-        Debug.Log("You now have " + CurrencyCount + "Currency");
     }
 
     public int GetCurrencyCount()

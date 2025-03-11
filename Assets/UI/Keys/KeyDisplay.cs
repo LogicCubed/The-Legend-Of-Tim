@@ -30,6 +30,7 @@ public class KeyDisplay : MonoBehaviour
         {
             KeyUI.enabled = true;
             keyText.enabled = true;
+            keyText.text = playerKeys.GetKeyCount().ToString();
         }
     }
 }
