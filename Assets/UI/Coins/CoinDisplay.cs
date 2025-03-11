@@ -1,20 +1,20 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class CoinDisplay : MonoBehaviour
 {
-    public Image KeyUI;
     public PlayerCurrency playerCurrency;
+    public TMP_Text coinText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerCurrency = GameObject.FindWithTag("Player").GetComponent<PlayerCurrency>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        playerCurrency = GameObject.FindWithTag("Player").GetComponent<PlayerCurrency>();
+        coinText.text = playerCurrency.GetCurrencyCount().ToString();
     }
 }
