@@ -4,7 +4,8 @@ public class ExplosiveBarrel : MonoBehaviour
 {
     public int BarrelHitPoints;
     public GameObject explosion;
-
+    public CameraShake cameraShake;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +24,7 @@ public class ExplosiveBarrel : MonoBehaviour
     public void Explode()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
+        cameraShake.Shake(1.0f);
         Destroy(gameObject);
     }
 
