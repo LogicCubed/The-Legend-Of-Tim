@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13f6d32d7e575e54c82bbcf228ba629c
+guid: b3e486e8231698444a160d6ee32fe9d1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 98b026a5d0578c14b985c2a380cbea8c
+    spriteID: ecedb4af1afe04b44b9a41f4e67a3943
     internalID: 0
     vertices: []
     indices: 
