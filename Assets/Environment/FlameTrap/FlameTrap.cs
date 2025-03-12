@@ -34,8 +34,8 @@ public class FlameTrap : MonoBehaviour
 
     IEnumerator Flame()
     {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.3f);
 
-        Instantiate(flame, transform.position + new Vector3(0, 1.5f, -1f), Quaternion.identity);
+        Instantiate(flame, transform.position + new Vector3(0, 2f, -1f), Quaternion.identity);
     }
 }
