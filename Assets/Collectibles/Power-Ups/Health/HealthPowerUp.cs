@@ -20,8 +20,16 @@ public class HealthPowerUp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerHealth.AddHealth();
-            Destroy(gameObject);
+            if (playerHealth.currentHealth < playerHealth.maxPlayerHealth)
+            {
+                playerHealth.currentHealth += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                // Logic to potentially store Health later
+                Debug.Log("Health is Full!");
+            }
         }
     }
 }
