@@ -27,6 +27,12 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
+    public void AddHealth()
+    {
+        currentHealth += 1;
+        maxPlayerHealth += 1;
+    }
+
     public void TakeDamage()
     {
         if (canTakeDamage && !isPlayerDead && playerShield.GetShieldCount() < 1)
