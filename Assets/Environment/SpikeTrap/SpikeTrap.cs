@@ -54,7 +54,7 @@ public class SpikeTrap : MonoBehaviour
 
     IEnumerator Spikes()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.5f);
 
         SpikesOut = true;
         spriteRenderer.sprite = SpikeTrapArmed;
