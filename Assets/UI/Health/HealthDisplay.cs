@@ -6,17 +6,14 @@ public class HealthDisplay : MonoBehaviour
     public int health;
     public int maxHealth;
 
-    public GameObject heartPrefab; // Prefab for heart image
-    public Transform heartContainer; // Container where hearts will be placed
+    public GameObject heartPrefab;
+    public Transform heartContainer;
     public PlayerHealth playerHealth;
 
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    void Start()
-    {
-    }
-
+    // Update is called once per frame
     void Update()
     {
         health = playerHealth.currentHealth;
@@ -50,5 +47,10 @@ public class HealthDisplay : MonoBehaviour
                 heartImage.sprite = emptyHeart; // Empty heart if health is less than index
             }
         }
+    }
+
+    public float GetHealthDisplayWidth()
+    {
+        return maxHealth * 52f;
     }
 }

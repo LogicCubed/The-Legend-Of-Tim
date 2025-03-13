@@ -4,31 +4,47 @@ using UnityEngine.UI;
 public class ShieldDisplay : MonoBehaviour
 {
     public int shield;
-    public Image[] shields;
 
+    public GameObject shieldPrefab;
+    public Transform shieldContainer;
     public PlayerShield playerShield;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
+    public Sprite shieldSprite;
+
+    public HealthDisplay healthDisplay;
 
     // Update is called once per frame
     void Update()
     {
-        shield = playerShield.currentShield;
-
-        for (int i=0; i < shields.Length; i++)
+        shield = playerShield.currentShield; 
+        UpdateShieldDisplay();
+        AdjustShieldContainerPosition();
+    }
+    
+    void UpdateShieldDisplay()
+    {
+        foreach (Transform child in shieldContainer)
         {
-            if (i < playerShield.currentShield)
-            {
-                shields[i].enabled = true;
-            }
-            else
-            {
-                shields[i].enabled = false;
-            }
-        }    
+            Destroy(child.gameObject);
+        }
+
+        for (int i = 0; i < shield; i++)
+        {
+            GameObject shield = Instantiate(shieldPrefab, shieldContainer);
+            shield.transform.localPosition = new Vector3(i * 52, 0, 0);
+
+            Image shieldImage = shield.GetComponent<Image>();
+            shieldImage.sprite = shieldSprite;
+        }
+
+    }
+
+    void AdjustShieldContainerPosition()
+    {
+        int maxHealth = healthDisplay.maxHealth;
+
+        float totalHeartsWidth = maxHealth;
+
+        shieldContainer.localPosition = new Vector3(totalHeartsWidth - 269f, shieldContainer.localPosition.y, shieldContainer.localPosition.z);
     }
 }
