@@ -5,6 +5,7 @@ public class CameraTarget : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] Transform player;
     [SerializeField] float threshold;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
