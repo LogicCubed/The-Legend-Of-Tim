@@ -8,6 +8,7 @@ public class ShieldDisplay : MonoBehaviour
     public GameObject shieldPrefab;
     public Transform shieldContainer;
     public PlayerShield playerShield;
+    public PlayerHealth playerHealth;
 
     public Sprite shieldSprite;
 
@@ -40,11 +41,12 @@ public class ShieldDisplay : MonoBehaviour
     }
 
     void AdjustShieldContainerPosition()
-    {
-        int maxHealth = healthDisplay.maxHealth;
+{
+    // Calculate the total width of the heart containers in world units
+    float heartsWidth = playerHealth.maxPlayerHealth * 52f; // Divide by PPU to convert to world units
 
-        float totalHeartsWidth = maxHealth;
+    // Adjust the shield container's position to be after the hearts
+    shieldContainer.localPosition = new Vector3(heartsWidth - 420f, shieldContainer.localPosition.y, shieldContainer.localPosition.z);
+}
 
-        shieldContainer.localPosition = new Vector3(totalHeartsWidth - 269f, shieldContainer.localPosition.y, shieldContainer.localPosition.z);
-    }
 }

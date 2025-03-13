@@ -24,33 +24,26 @@ public class HealthDisplay : MonoBehaviour
 
     void UpdateHealthDisplay()
     {
-        // First, clear existing hearts
         foreach (Transform child in heartContainer)
         {
             Destroy(child.gameObject);
         }
 
-        // Loop to display hearts based on maxHealth
         for (int i = 0; i < maxHealth; i++)
         {
             GameObject heart = Instantiate(heartPrefab, heartContainer);
-            heart.transform.localPosition = new Vector3(i * 52, 0, 0); // Adjust the positioning as needed
+            heart.transform.localPosition = new Vector3(i * 52, 0, 0);
 
-            Image heartImage = heart.GetComponent<Image>(); // Get the Image component of the heart
+            Image heartImage = heart.GetComponent<Image>();
 
             if (i < health)
             {
-                heartImage.sprite = fullHeart; // Full heart if health is greater than index
+                heartImage.sprite = fullHeart;
             }
             else
             {
-                heartImage.sprite = emptyHeart; // Empty heart if health is less than index
+                heartImage.sprite = emptyHeart;
             }
         }
-    }
-
-    public float GetHealthDisplayWidth()
-    {
-        return maxHealth * 52f;
     }
 }

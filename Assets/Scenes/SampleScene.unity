@@ -1138,6 +1138,7 @@ MonoBehaviour:
   shieldPrefab: {fileID: 7614462677540373451, guid: e0b169bde92b025469df4b18ee5d352b, type: 3}
   shieldContainer: {fileID: 1368695300}
   playerShield: {fileID: 1584373950}
+  playerHealth: {fileID: 1584373949}
   shieldSprite: {fileID: -6717884257390833292, guid: 8d1753e289ca0d045ad30c947851894f, type: 3}
   healthDisplay: {fileID: 867533819}
 --- !u!114 &867533819
