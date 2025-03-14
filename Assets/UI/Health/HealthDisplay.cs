@@ -32,7 +32,7 @@ public class HealthDisplay : MonoBehaviour
         for (int i = 0; i < maxHealth; i++)
         {
             GameObject heart = Instantiate(heartPrefab, heartContainer);
-            heart.transform.localPosition = new Vector3(i * 52, 0, 0);
+            heart.transform.localPosition = new Vector3(i * 137, 0, 0);
 
             Image heartImage = heart.GetComponent<Image>();
 
