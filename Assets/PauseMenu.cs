@@ -6,25 +6,12 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject settingsMenuUI;
+    public GameObject quitconfirmationMenuUI;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (settingsMenuUI.activeSelf)
-            {
-                CloseSettings();
-            }
-            else if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
+        CheckEscapeKey();
     }
 
     public void CloseSettings()
@@ -33,12 +20,15 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
     }
 
-    public void Resume()
+    public void CloseQuitConfirmation()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale =1f;
+        quitconfirmationMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
+    }
 
-        GameIsPaused = false;
+    public void LoadMenu()
+    {
+        Debug.Log("Loading Menu");
     }
 
     void Pause()
@@ -49,14 +39,34 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void LoadMenu()
+    public void Resume()
     {
-        Debug.Log("Loading Menu");
+        pauseMenuUI.SetActive(false);
+        Time.timeScale =1f;
+
+        GameIsPaused = false;
     }
 
-    public void QuitGame()
+    public void CheckEscapeKey()
     {
-        Debug.Log("Quitting Game");
-        Application.Quit();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (settingsMenuUI.activeSelf)
+            {
+                CloseSettings();
+            }
+            else if (quitconfirmationMenuUI.activeSelf) 
+            {
+                CloseQuitConfirmation();
+            }
+            else if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 }
