@@ -18,7 +18,6 @@ public class PlayerShield : MonoBehaviour
 
     public void AddShield()
     {
-        Debug.Log("+1 Shield!");
         currentShield += 1;
     }
 

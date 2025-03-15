@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class HealthPowerUp : MonoBehaviour
+public class NonchalantPowerUp : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+
+    bool PlayerInRange = false;
+
+
     private float startY;
     private Transform shadow;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,22 +19,33 @@ public class HealthPowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ClaimPowerUp();
         Bob();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void ClaimPowerUp()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (playerHealth.currentHealth < playerHealth.maxPlayerHealth)
-            {
-                playerHealth.currentHealth += 1;
-                Destroy(gameObject);
-            }
-            else
-            {
-                // Logic to potentially store Health later
-            }
+            //Insert Code for Power-Up Pop-Up Dialogue!
+            Debug.Log("He's just chill like that");
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInRange = false;
         }
     }
 

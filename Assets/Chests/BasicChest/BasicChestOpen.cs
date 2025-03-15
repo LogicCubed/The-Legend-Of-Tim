@@ -18,6 +18,11 @@ public class BasicChestOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HandleChest();
+    }
+
+    public void HandleChest()
+    {
         if (PlayerInRange && Input.GetKeyDown(KeyCode.E) && !ChestIsOpened && playerKeys.GetKeyCount() > 0)
         {
             OpenChest();
