@@ -10,6 +10,6 @@ public class UIStats : MonoBehaviour
     {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
         float fps = 1.0f / deltaTime;
-        fpsText.text = $"FPS: {Mathf.RoundToInt(fps)}";
+        fpsText.text = $"{Mathf.RoundToInt(fps)}";
     }
 }
