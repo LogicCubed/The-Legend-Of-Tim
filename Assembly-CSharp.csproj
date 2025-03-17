@@ -70,6 +70,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\UI\Health\HealthDisplay.cs" />
+    <Compile Include="Assets\UI\PopUp\PopUpManager.cs" />
     <Compile Include="Assets\Collectibles\Power-Ups\Shield\ShieldPowerUp.cs" />
     <Compile Include="Assets\Menus\QuitConfirmation.cs" />
     <Compile Include="Assets\CameraTarget.cs" />

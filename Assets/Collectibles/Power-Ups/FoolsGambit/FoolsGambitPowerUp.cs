@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class FoolsGambitPowerUp : MonoBehaviour
@@ -9,6 +10,11 @@ public class FoolsGambitPowerUp : MonoBehaviour
 
     private float startY;
     private Transform shadow;
+
+    public PopUpManager popUpManager;
+    public string pickupTitle = "Fool's Gambit";
+    public string pickupText = "You've made your choice. How foolish!";
+    public Sprite itemSprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +34,7 @@ public class FoolsGambitPowerUp : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("You've made your choice. How foolish.");
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite);
             Destroy(gameObject);
         }
     }

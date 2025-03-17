@@ -9,6 +9,11 @@ public class NonchalantPowerUp : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PopUpManager popUpManager;
+    public string pickupTitle = "Nonchalant";
+    public string pickupText = "He's just chill like that";
+    public Sprite itemSprite;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,8 +32,7 @@ public class NonchalantPowerUp : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            //Insert Code for Power-Up Pop-Up Dialogue!
-            Debug.Log("He's just chill like that");
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite);
             Destroy(gameObject);
         }
     }
