@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     private bool canTakeDamage = true;
     public int InvincibilitySeconds;
 
+    public DeathScreen deathScreen;
+
     public PlayerShield playerShield;
 
     public CameraShake cameraShake;
@@ -59,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void PlayerDeath()
     {
-        Debug.Log("Player Has Died!");
+        deathScreen.ShowDeathScreen();
         isPlayerDead = true;
     }
 
