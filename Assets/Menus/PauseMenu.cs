@@ -26,11 +26,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
     }
 
-    public void LoadMenu()
-    {
-        Debug.Log("Loading Menu");
-    }
-
     void Pause()
     {
         pauseMenuUI.SetActive(true);
