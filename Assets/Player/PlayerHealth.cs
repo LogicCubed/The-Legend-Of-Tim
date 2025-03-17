@@ -10,11 +10,13 @@ public class PlayerHealth : MonoBehaviour
     private bool canTakeDamage = true;
     public int InvincibilitySeconds;
 
-    public DeathScreen deathScreen;
-
     public PlayerShield playerShield;
 
     public CameraShake cameraShake;
+
+    public DeathScreen deathScreen;
+
+    public int TotalDamageTaken;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +42,8 @@ public class PlayerHealth : MonoBehaviour
         if (canTakeDamage && !isPlayerDead && playerShield.GetShieldCount() < 1)
         {
             cameraShake.Shake(0.5f);
-            currentHealth -=1;
+            TotalDamageTaken += 1;
+            currentHealth -= 1;
 
             if (currentHealth <= 0)
             {
@@ -54,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
         else if (canTakeDamage && playerShield.GetShieldCount() >= 1)
         {
             cameraShake.Shake(0.5f);
+            TotalDamageTaken += 1;
             playerShield.RemoveShield();
             StartCoroutine(InvincibilityFrames());
         }

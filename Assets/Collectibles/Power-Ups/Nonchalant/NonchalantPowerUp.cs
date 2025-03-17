@@ -11,7 +11,7 @@ public class NonchalantPowerUp : MonoBehaviour
 
     public PopUpManager popUpManager;
     public string pickupTitle = "Nonchalant";
-    public string pickupText = "He's just chill like that";
+    private string pickupText = "20% Chance to not take Damage!";
     public Sprite itemSprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -1,9 +1,7 @@
-using TMPro;
 using UnityEngine;
 
-public class FoolsGambitPowerUp : MonoBehaviour
+public class HermesBootsPowerUp : MonoBehaviour
 {
-
     bool PlayerInRange = false;
 
     public Animator anim;
@@ -12,8 +10,8 @@ public class FoolsGambitPowerUp : MonoBehaviour
     private Transform shadow;
 
     public PopUpManager popUpManager;
-    public string pickupTitle = "Fool's Gambit";
-    private string pickupText = "2x Damage Given, 2x Damage Taken";
+    public string pickupTitle = "Hermes Boots";
+    public string pickupText = "+20% Movement Speed";
     public Sprite itemSprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -10,6 +10,11 @@ public class TNTItem : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PopUpManager popUpManager;
+    public string pickupTitle = "TNT";
+    public string pickupText = "BOOM";
+    public Sprite itemSprite;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +33,7 @@ public class TNTItem : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("BOOM");
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite);
             Destroy(gameObject);
         }
     }
