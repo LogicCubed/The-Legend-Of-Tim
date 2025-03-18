@@ -11,6 +11,12 @@ public class BonusHealthPowerUp : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PopUpManager popUpManager;
+    private string pickupTitle = "Bonus Health";
+    private string pickupText = "Gained another Heart!";
+    public Sprite itemSprite;
+    public Sprite itemGrade;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +35,7 @@ public class BonusHealthPowerUp : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
             playerHealth.AddHealth();
             Destroy(gameObject);
         }

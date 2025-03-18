@@ -1799,7 +1799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a20a981403a2400438573e9cec7b668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 400
   delayBeforeFade: 2
   credits: {fileID: 1974262266}
   creditsRectTransform: {fileID: 280249321}

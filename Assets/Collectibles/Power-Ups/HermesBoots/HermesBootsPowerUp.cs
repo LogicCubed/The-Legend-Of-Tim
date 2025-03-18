@@ -10,9 +10,10 @@ public class HermesBootsPowerUp : MonoBehaviour
     private Transform shadow;
 
     public PopUpManager popUpManager;
-    public string pickupTitle = "Hermes Boots";
-    public string pickupText = "+20% Movement Speed";
+    private string pickupTitle = "Hermes Boots";
+    private string pickupText = "+20% Movement Speed";
     public Sprite itemSprite;
+    public Sprite itemGrade;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,7 +33,7 @@ public class HermesBootsPowerUp : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite);
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
             Destroy(gameObject);
         }
     }

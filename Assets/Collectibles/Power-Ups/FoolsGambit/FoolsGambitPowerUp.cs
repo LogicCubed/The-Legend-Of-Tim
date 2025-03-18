@@ -12,9 +12,10 @@ public class FoolsGambitPowerUp : MonoBehaviour
     private Transform shadow;
 
     public PopUpManager popUpManager;
-    public string pickupTitle = "Fool's Gambit";
+    private string pickupTitle = "Fool's Gambit";
     private string pickupText = "2x Damage Given, 2x Damage Taken";
     public Sprite itemSprite;
+    public Sprite itemGrade;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +35,7 @@ public class FoolsGambitPowerUp : MonoBehaviour
     {
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite);
+            popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
             Destroy(gameObject);
         }
     }
