@@ -1,30 +1,23 @@
 using UnityEngine;
 
-public class TNTItem : MonoBehaviour
+public class TKOPowerUp : MonoBehaviour
 {
-
     bool PlayerInRange = false;
 
     public Animator anim;
+
     private float startY;
     private Transform shadow;
 
     public PopUpManager popUpManager;
-    private string pickupTitle = "TNT";
-    private string pickupText = "BOOM";
+    private string pickupTitle = "TKO";
+    private string pickupText = "Tim Knock-Out! Deal More Knockback!";
     public Sprite itemSprite;
     public Sprite itemGrade;
-
-    public ItemSlot itemSlot;
-    public Item TNT;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        popUpManager = FindFirstObjectByType<PopUpManager>();
-        GameObject itemSlotObject = GameObject.Find("Canvas/ItemSlot");
-        itemSlot = itemSlotObject.GetComponent<ItemSlot>();
-
         startY = transform.position.y;
         shadow = transform.Find("DropShadow");
     }
@@ -35,12 +28,11 @@ public class TNTItem : MonoBehaviour
         ClaimPowerUp();
         Bob();
     }
-
+    
     void ClaimPowerUp()
-    {   
-        if (PlayerInRange && Input.GetKeyDown(KeyCode.E))
+    {
+        if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            itemSlot.SetItem(TNT);
             popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
             Destroy(gameObject);
         }

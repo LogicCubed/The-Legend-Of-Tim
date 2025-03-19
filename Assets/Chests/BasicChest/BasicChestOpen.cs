@@ -6,6 +6,8 @@ public class BasicChestOpen : MonoBehaviour
     bool ChestIsOpened = false;
 
     public Animator anim;
+    public GameObject EButton;
+    private GameObject eButtonInstance;
 
     private KeyCollection playerKeys;
 
@@ -44,6 +46,8 @@ public class BasicChestOpen : MonoBehaviour
             if (playerKeys.GetKeyCount() > 0)
             {
                 anim.SetBool("InRange", true);
+                Vector3 spawnPosition = transform.position + new Vector3(0, 1, 0);
+                eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
             }
         }
     }
@@ -53,6 +57,7 @@ public class BasicChestOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange = false;
+            Destroy(eButtonInstance);
             anim.SetBool("InRange", false);
         }
     }
@@ -61,6 +66,7 @@ public class BasicChestOpen : MonoBehaviour
     {
         ChestIsOpened = true;
         anim.SetTrigger("Open");
+        Destroy(eButtonInstance);
     }
 
 }

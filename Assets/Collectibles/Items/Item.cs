@@ -8,5 +8,6 @@ public class Item : ScriptableObject
 
     public virtual void UseItem(GameObject player)
     {
+        Debug.Log("Used Item");
     }
 }

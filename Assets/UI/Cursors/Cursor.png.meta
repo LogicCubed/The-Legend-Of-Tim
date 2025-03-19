@@ -1,21 +1,27 @@
 fileFormatVersion: 2
-guid: d81545ea753600045ab9c21612f123f0
+guid: eeb9d3a569726084ca7922c1d7b88dab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8154394326123773439
-    second: legendoftimlogo_0
+      213: -857270020218531044
+    second: Cursor 1_0
   - first:
-      213: -4705749706247446726
-    second: legendoftimlogo_1
+      213: -8455972242612403161
+    second: Cursor 1_1
   - first:
-      213: -5679493704682437226
-    second: legendoftimlogo_2
+      213: 6494991218663545492
+    second: Cursor 1_2
+  - first:
+      213: -6112173431101609114
+    second: Cursor 1_3
+  - first:
+      213: 3394224308310127646
+    second: Cursor 1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -30,7 +36,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -63,7 +69,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -106,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: legendoftimlogo_0
+      name: Cursor 1_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 549
-        width: 660
-        height: 321
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1028ee07095c5de80800000000000000
-      internalID: -8154394326123773439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: legendoftimlogo_1
-      rect:
-        serializedVersion: 2
-        x: 753
-        y: 244
-        width: 1055
-        height: 619
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3fd8350391d1beb0800000000000000
-      internalID: -4705749706247446726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: legendoftimlogo_2
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 216
-        width: 400
-        height: 315
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 695065c11926e21b0800000000000000
-      internalID: -5679493704682437226
+      spriteID: c135848657d5a14f0800000000000000
+      internalID: -857270020218531044
       vertices: []
       indices: 
       edges: []
@@ -175,7 +137,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 42bc3c96781f7094e9943f28ef528c71
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +147,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      legendoftimlogo_0: -8154394326123773439
-      legendoftimlogo_1: -4705749706247446726
-      legendoftimlogo_2: -5679493704682437226
+      Cursor 1_0: -857270020218531044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

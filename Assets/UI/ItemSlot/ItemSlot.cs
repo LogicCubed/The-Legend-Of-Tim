@@ -20,7 +20,10 @@ public class ItemSlot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentItem.UseItem(GameObject.FindGameObjectWithTag("Player"));
+            if (currentItem != null)
+            {
+                currentItem.UseItem(GameObject.FindGameObjectWithTag("Player"));
+            }
             SlotDisplay.enabled = false;
         }
     }
