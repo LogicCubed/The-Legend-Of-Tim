@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
     public int InvincibilitySeconds;
 
     public PlayerShield playerShield;
-
     public CameraShake cameraShake;
 
     public DeathScreen deathScreen;

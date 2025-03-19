@@ -134,10 +134,10 @@
     <Compile Include="Assets\Collectibles\Power-Ups\Health\HealthPowerUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\UI\DeathScreen\DeathScreen.cs" />
     <Compile Include="Assets\UI\Stats\Timer.cs" />
     <Compile Include="Assets\UI\Coins\CoinDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\Menus\DeathScreen\DeathScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
