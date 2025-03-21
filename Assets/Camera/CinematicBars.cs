@@ -6,7 +6,9 @@ public class CinematicBars : MonoBehaviour
 {
     public RectTransform topBar;
     public RectTransform bottomBar;
-    public float animationDuration = 0.25f; // Duration of the animation
+    private float animationDuration = 0.25f;
+
+    public GameObject UI;
 
     private Vector2 topBarOriginalPos;
     private Vector2 bottomBarOriginalPos;
@@ -20,12 +22,14 @@ public class CinematicBars : MonoBehaviour
 
     public void EnableBars()
     {
-        StartCoroutine(MoveBars(topBarOriginalPos.y - 220, bottomBarOriginalPos.y + 220));
+        StartCoroutine(MoveBars(topBarOriginalPos.y - 200, bottomBarOriginalPos.y + 200));
+        UI.SetActive(false);
     }
 
     public void DisableBars()
     {
         StartCoroutine(MoveBars(topBarOriginalPos.y, bottomBarOriginalPos.y));
+        UI.SetActive(true);
     }
 
     private IEnumerator MoveBars(float topTargetY, float bottomTargetY)

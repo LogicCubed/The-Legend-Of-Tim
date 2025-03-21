@@ -1,4 +1,6 @@
+using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossChestOpen : MonoBehaviour
 {
@@ -6,17 +8,20 @@ public class BossChestOpen : MonoBehaviour
     bool ChestIsOpened = false;
     bool ChestIsOpening = false;
 
-    //public Animator anim;
-    //public GameObject mashEButton;
-    //private GameObject mashEButtonInstance;
+    public Animator anim;
+    public GameObject EButton;
+    private GameObject eButtonInstance;
 
+    public CinemachineCamera cinemachineCamera;
     public CinematicBars cinematicBars;
-    public GameObject UI;
-    public float mashCounter = 0f;
-    public float decayRate = 15f;
-    public float mashThreshold = 15f;
+    private float mashCounter = 0f;
+    private float mashCounterStrength = 3f;
+    private float decayRate = 3f;
+    private float mashThreshold = 20f;
+    public MashBar mashBar;
 
     private KeyCollection playerKeys;
+    public PlayerMovement playerMovement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,13 +41,11 @@ public class BossChestOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange = true;
-            Debug.Log("IN RANGE!");
             if (playerKeys.GetKeyCount() > 0 && !ChestIsOpened)
             {
-                Debug.Log("HAS KEY AND IN RANGE!");
-                //anim.SetBool("InRange", true);
-                //Vector3 spawnPosition = transform.position + new Vector3(0, 1, 0);
-                //mashEButtonInstance = Instantiate(mashEButton, spawnPosition, Quaternion.identity);
+                anim.SetBool("InRange", true);
+                Vector3 spawnPosition = transform.position + new Vector3(0, 2, 0);
+                eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
             }
         }
     }
@@ -52,9 +55,8 @@ public class BossChestOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange = false;
-            Debug.Log("OUT OF RANGE!");
-            //Destroy(eButtonInstance);
-            //anim.SetBool("InRange", false);
+            Destroy(eButtonInstance);
+            anim.SetBool("InRange", false);
         }
     }
 
@@ -65,15 +67,21 @@ public class BossChestOpen : MonoBehaviour
             ChestIsOpening = true;
             playerKeys.KeysInInventory -= 1;
 
+            cinemachineCamera.Lens.OrthographicSize -= 4;
+            playerMovement.DisableMovement();
+            mashBar.gameObject.SetActive(true);
             cinematicBars.EnableBars();
-            UI.SetActive(false);
+
+            Destroy(eButtonInstance);
+            Vector3 spawnPosition = transform.position + new Vector3(0, 3.5f, 0);
+            eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
         }
         
         if (PlayerInRange && Input.GetKeyDown(KeyCode.E) && !ChestIsOpening && !ChestIsOpened && playerKeys.GetKeyCount() < 1)
         {
             Debug.Log("NO KEY!");
-            //anim.ResetTrigger("NoKey"); 
-            //anim.SetTrigger("NoKey");
+            anim.ResetTrigger("NoKey"); 
+            anim.SetTrigger("NoKey");
         }
     }
 
@@ -81,16 +89,16 @@ public class BossChestOpen : MonoBehaviour
     {
         if (ChestIsOpening)
         {
+            mashBar.UpdateMashBar(mashCounter, mashThreshold);
             if (mashCounter > 0)
             {
-                mashCounter -= decayRate * Time.deltaTime;
+                mashCounter -= decayRate * Time.deltaTime * 4f;
                 mashCounter = Mathf.Max(mashCounter, 0f);
             }
 
             if (Input.GetKeyDown(KeyCode.E) && PlayerInRange)
             {
-                mashCounter += 1f;
-                Debug.Log("Mash count: " + mashCounter);
+                mashCounter += mashCounterStrength;
             }
 
             if (mashCounter >= mashThreshold)
@@ -104,11 +112,14 @@ public class BossChestOpen : MonoBehaviour
     {
         ChestIsOpened = true;
         ChestIsOpening = false;
+
+        cinemachineCamera.Lens.OrthographicSize += 4;
+        playerMovement.EnableMovement();
+        mashBar.gameObject.SetActive(false);
         cinematicBars.DisableBars();
-        UI.SetActive(true);
-        Debug.Log("OPENED CHEST!");
-        //anim.SetTrigger("Open");
-        //Destroy(eButtonInstance);
+        Destroy(eButtonInstance);
+        anim.SetTrigger("Open");
+        Destroy(eButtonInstance);
     }
 
 }

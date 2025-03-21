@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 input;
     private bool moving;
 
+    private bool canMove = true;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,11 +38,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void GetInput()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
 
-        input = new Vector2(x, y);
-        input.Normalize();
+        if(canMove)
+        {
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
+
+            input = new Vector2(x, y);
+            input.Normalize();
+        }
     }
 
     private void Animate()
@@ -60,6 +66,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.SetBool("Moving", moving);
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+        input = new Vector2(0, 0);
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
     }
 
 }
