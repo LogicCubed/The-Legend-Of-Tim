@@ -43,7 +43,7 @@ public class BasicChestOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange = true;
-            if (playerKeys.GetKeyCount() > 0)
+            if (playerKeys.GetKeyCount() > 0 && !ChestIsOpened)
             {
                 anim.SetBool("InRange", true);
                 Vector3 spawnPosition = transform.position + new Vector3(0, 1, 0);
