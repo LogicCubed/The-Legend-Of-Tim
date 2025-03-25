@@ -4,6 +4,7 @@ public class Tab : MonoBehaviour
 {
 
     public GameObject tab;
+    public GameObject timer;
 
     // Update is called once per frame
     void Update()
@@ -16,11 +17,13 @@ public class Tab : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             tab.SetActive(true);
+            timer.SetActive(true);
         }
 
         if (Input.GetKeyUp(KeyCode.Tab))
         {
             tab.SetActive(false);
+            timer.SetActive(false);
         }
     }
 }

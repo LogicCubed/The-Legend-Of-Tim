@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
 using TMPro;
 
 public class DeathScreen : MonoBehaviour
@@ -9,12 +10,19 @@ public class DeathScreen : MonoBehaviour
     public TextMeshProUGUI totalDamageTaken;
     public TextMeshProUGUI totalCurrency;
 
+    public CinemachineCamera cinemachineCamera;
+    public CinematicBars cinematicBars;
+    private float zoomAmount = 3f;
+
     public PlayerHealth playerHealth;
     public PlayerCurrency playerCurrency;
-    public Timer elapsedTime;
+    public TextMeshProUGUI elapsedTime;
 
     public void ShowDeathScreen()
     {
+        cinemachineCamera.Lens.OrthographicSize -= zoomAmount;
+        cinematicBars.EnableBars();
+    
         totalTime.text = "Total Time: ";
 
         totalDamageTaken.text = "Total Damage Taken: " + playerHealth.TotalDamageTaken.ToString();

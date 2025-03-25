@@ -19,6 +19,7 @@ public class BossChestOpen : MonoBehaviour
     private float decayRate = 3f;
     private float mashThreshold = 20f;
     public MashBar mashBar;
+    private float zoomAmount = 3f;
 
     private KeyCollection playerKeys;
     public PlayerMovement playerMovement;
@@ -67,19 +68,18 @@ public class BossChestOpen : MonoBehaviour
             ChestIsOpening = true;
             playerKeys.KeysInInventory -= 1;
 
-            cinemachineCamera.Lens.OrthographicSize -= 4;
+            cinemachineCamera.Lens.OrthographicSize -= zoomAmount;
             playerMovement.DisableMovement();
             mashBar.gameObject.SetActive(true);
             cinematicBars.EnableBars();
 
             Destroy(eButtonInstance);
-            Vector3 spawnPosition = transform.position + new Vector3(0, 3.5f, 0);
+            Vector3 spawnPosition = transform.position + new Vector3(0, 2.5f, 0);
             eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
         }
         
         if (PlayerInRange && Input.GetKeyDown(KeyCode.E) && !ChestIsOpening && !ChestIsOpened && playerKeys.GetKeyCount() < 1)
         {
-            Debug.Log("NO KEY!");
             anim.ResetTrigger("NoKey"); 
             anim.SetTrigger("NoKey");
         }
@@ -113,7 +113,7 @@ public class BossChestOpen : MonoBehaviour
         ChestIsOpened = true;
         ChestIsOpening = false;
 
-        cinemachineCamera.Lens.OrthographicSize += 4;
+        cinemachineCamera.Lens.OrthographicSize += zoomAmount;
         playerMovement.EnableMovement();
         mashBar.gameObject.SetActive(false);
         cinematicBars.DisableBars();

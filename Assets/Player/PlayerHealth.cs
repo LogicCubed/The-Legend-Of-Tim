@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int InvincibilitySeconds;
 
     public PlayerShield playerShield;
+    public PlayerMovement playerMovement;
     public CameraShake cameraShake;
 
     public DeathScreen deathScreen;
@@ -65,6 +66,7 @@ public class PlayerHealth : MonoBehaviour
     private void PlayerDeath()
     {
         deathScreen.ShowDeathScreen();
+        playerMovement.DisableMovement();
         isPlayerDead = true;
     }
 

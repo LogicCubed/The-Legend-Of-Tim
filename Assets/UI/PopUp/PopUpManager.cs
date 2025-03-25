@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PopUpManager : MonoBehaviour
 {
@@ -11,15 +12,12 @@ public class PopUpManager : MonoBehaviour
     public Image PopUpGrade;
 
     private float popUpDuration = 4f;
-    private float popUpTimer;
+    private float animationDuration = 0.1f;
+    private Vector2 originalPosition;
 
     void Start()
     {
-    }
-
-    void Update()
-    {
-        PopUpTimer();
+        originalPosition = PopUp.GetComponent<RectTransform>().anchoredPosition;
     }
 
     public void ShowPopUp(string title, string message, Sprite ItemSprite, Sprite ItemGrade)
@@ -30,19 +28,31 @@ public class PopUpManager : MonoBehaviour
         PopUpGrade.sprite = ItemGrade;
 
         PopUp.SetActive(true);
-        popUpTimer = popUpDuration;
+        StartCoroutine(HandlePopUpAnimation());
     }
 
-    public void PopUpTimer()
+    private IEnumerator HandlePopUpAnimation()
     {
-        if (popUpTimer > 0)
-        {
-            popUpTimer -= Time.deltaTime;
+        yield return StartCoroutine(MovePopUp(originalPosition.y + 200));
+        yield return new WaitForSeconds(popUpDuration);
+        yield return StartCoroutine(MovePopUp(originalPosition.y));
+        PopUp.SetActive(false);
+    }
 
-            if (popUpTimer <= 0)
-            {
-                PopUp.gameObject.SetActive(false);
-            }
+    private IEnumerator MovePopUp(float targetY)
+    {
+        float elapsedTime = 0f;
+        RectTransform popUpRect = PopUp.GetComponent<RectTransform>();
+        Vector2 startPos = popUpRect.anchoredPosition;
+
+        while (elapsedTime < animationDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / animationDuration;
+            popUpRect.anchoredPosition = new Vector2(startPos.x, Mathf.Lerp(startPos.y, targetY, t));
+            yield return null;
         }
+
+        popUpRect.anchoredPosition = new Vector2(startPos.x, targetY);
     }
 }
