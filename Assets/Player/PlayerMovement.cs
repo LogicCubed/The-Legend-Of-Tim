@@ -6,18 +6,16 @@ using UnityEngine.Tilemaps;
 public class PlayerMovement : MonoBehaviour
 {
     public Animator anim;
-
-    public float moveSpeed;
-
     public Rigidbody2D rb;
 
     private float x;
     private float y;
 
+    public PlayerStats playerStats;
+
     private Vector2 lastDirection = Vector2.down;
     private Vector2 input;
     private bool moving;
-
     private bool canMove = true;
 
     private void Start()
@@ -33,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = input * moveSpeed;
+        rb.linearVelocity = input * playerStats.PlayerSpeed;
     }
 
     private void GetInput()

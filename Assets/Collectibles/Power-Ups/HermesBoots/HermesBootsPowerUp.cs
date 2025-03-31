@@ -9,9 +9,11 @@ public class HermesBootsPowerUp : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PlayerStats playerStats;
+
     public PopUpManager popUpManager;
     private string pickupTitle = "Hermes Boots";
-    private string pickupText = "+20% Movement Speed";
+    private string pickupText = "+5% Movement Speed";
     public Sprite itemSprite;
     public Sprite itemGrade;
 
@@ -34,6 +36,7 @@ public class HermesBootsPowerUp : MonoBehaviour
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
+            playerStats.PlayerSpeed *= 1.05f;
             Destroy(gameObject);
         }
     }

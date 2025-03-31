@@ -11,6 +11,8 @@ public class FoolsGambitPowerUp : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PlayerStats playerStats;
+
     public PopUpManager popUpManager;
     private string pickupTitle = "Fool's Gambit";
     private string pickupText = "2x Damage Given, 2x Damage Taken";
@@ -36,6 +38,8 @@ public class FoolsGambitPowerUp : MonoBehaviour
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
+            playerStats.DamageToTake *= 2;
+            playerStats.PlayerDamage *= 2;
             Destroy(gameObject);
         }
     }

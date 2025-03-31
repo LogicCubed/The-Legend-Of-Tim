@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
         {
             cameraShake.Shake(0.5f);
             TotalDamageTaken += 1;
-            playerShield.RemoveShield();
+            playerShield.RemoveShield(1);
             StartCoroutine(InvincibilityFrames());
         }
     }

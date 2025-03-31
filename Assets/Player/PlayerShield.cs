@@ -21,9 +21,9 @@ public class PlayerShield : MonoBehaviour
         currentShield += 1;
     }
 
-    public void RemoveShield()
+    public void RemoveShield(int amount)
     {
-        currentShield -= 1;
+        currentShield -= amount;
     }
 
     public int GetShieldCount()
