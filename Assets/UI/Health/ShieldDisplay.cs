@@ -32,7 +32,7 @@ public class ShieldDisplay : MonoBehaviour
         for (int i = 0; i < shield; i++)
         {
             GameObject shield = Instantiate(shieldPrefab, shieldContainer);
-            shield.transform.localPosition = new Vector3(i * 85, 0, 0);
+            shield.transform.localPosition = new Vector3(i * 55, 0, 0);
 
             Image shieldImage = shield.GetComponent<Image>();
             shieldImage.sprite = shieldSprite;
@@ -42,9 +42,9 @@ public class ShieldDisplay : MonoBehaviour
 
     void AdjustShieldContainerPosition()
 {
-    float heartsWidth = playerHealth.maxPlayerHealth * 85f;
+    float heartsWidth = playerHealth.maxPlayerHealth * 55f;
 
-    shieldContainer.localPosition = new Vector3(heartsWidth - 900f, shieldContainer.localPosition.y, shieldContainer.localPosition.z);
+    shieldContainer.localPosition = new Vector3(heartsWidth - 918f, shieldContainer.localPosition.y, shieldContainer.localPosition.z);
 }
 
 }

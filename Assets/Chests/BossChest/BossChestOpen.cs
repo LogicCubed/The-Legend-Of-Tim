@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class BossChestOpen : MonoBehaviour
 {
-    bool PlayerInRange = false;
+    private bool PlayerInRange = false;
     bool ChestIsOpened = false;
     bool ChestIsOpening = false;
 
     public Animator anim;
     public GameObject EButton;
-    private GameObject eButtonInstance;
+    private GameObject EButtonInstance;
 
     public CinemachineCamera cinemachineCamera;
     public CinematicBars cinematicBars;
@@ -39,24 +39,24 @@ public class BossChestOpen : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.isTrigger)
         {
             PlayerInRange = true;
             if (playerKeys.GetKeyCount() > 0 && !ChestIsOpened)
             {
                 anim.SetBool("InRange", true);
                 Vector3 spawnPosition = transform.position + new Vector3(0, 2, 0);
-                eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
+                EButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.isTrigger)
         {
             PlayerInRange = false;
-            Destroy(eButtonInstance);
+            Destroy(EButtonInstance);
             anim.SetBool("InRange", false);
         }
     }
@@ -73,9 +73,9 @@ public class BossChestOpen : MonoBehaviour
             mashBar.gameObject.SetActive(true);
             cinematicBars.EnableBars();
 
-            Destroy(eButtonInstance);
+            Destroy(EButtonInstance);
             Vector3 spawnPosition = transform.position + new Vector3(0, 2.5f, 0);
-            eButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
+            EButtonInstance = Instantiate(EButton, spawnPosition, Quaternion.identity);
         }
         
         if (PlayerInRange && Input.GetKeyDown(KeyCode.E) && !ChestIsOpening && !ChestIsOpened && playerKeys.GetKeyCount() < 1)
@@ -117,9 +117,8 @@ public class BossChestOpen : MonoBehaviour
         playerMovement.EnableMovement();
         mashBar.gameObject.SetActive(false);
         cinematicBars.DisableBars();
-        Destroy(eButtonInstance);
         anim.SetTrigger("Open");
-        Destroy(eButtonInstance);
+        Destroy(EButtonInstance);
     }
 
 }

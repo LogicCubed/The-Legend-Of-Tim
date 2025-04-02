@@ -40,7 +40,7 @@ public class BasicChestOpen : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.isTrigger)
         {
             PlayerInRange = true;
             if (playerKeys.GetKeyCount() > 0 && !ChestIsOpened)
@@ -54,7 +54,7 @@ public class BasicChestOpen : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.isTrigger)
         {
             PlayerInRange = false;
             Destroy(eButtonInstance);

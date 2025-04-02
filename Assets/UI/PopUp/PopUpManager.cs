@@ -33,7 +33,7 @@ public class PopUpManager : MonoBehaviour
 
     private IEnumerator HandlePopUpAnimation()
     {
-        yield return StartCoroutine(MovePopUp(originalPosition.y + 200));
+        yield return StartCoroutine(MovePopUp(originalPosition.y + 210));
         yield return new WaitForSeconds(popUpDuration);
         yield return StartCoroutine(MovePopUp(originalPosition.y));
         PopUp.SetActive(false);

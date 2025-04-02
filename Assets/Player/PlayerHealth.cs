@@ -5,6 +5,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxPlayerHealth;
     public int currentHealth;
+    public int heartsStored;
     private bool isPlayerDead;
 
     private bool canTakeDamage = true;

@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class HealthPowerUp : MonoBehaviour
 {
     public PlayerHealth playerHealth;
+    public bool PlayerInRange;
     private float startY;
     private Transform shadow;
     
@@ -16,22 +18,38 @@ public class HealthPowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        StoreHealth();
         Bob();
+    }
+
+    void StoreHealth()
+    {
+        if (playerHealth != null && PlayerInRange && Input.GetKeyDown(KeyCode.E) && playerHealth.currentHealth == playerHealth.maxPlayerHealth)
+        {
+            playerHealth.heartsStored += 1;
+            Destroy(gameObject);
+            Debug.Log("PLAYER HAS " + playerHealth.heartsStored + " HEALTH STORED!");
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (playerHealth.currentHealth < playerHealth.maxPlayerHealth)
+            PlayerInRange = true;
+            if (playerHealth != null && playerHealth.currentHealth < playerHealth.maxPlayerHealth)
             {
                 playerHealth.currentHealth += 1;
                 Destroy(gameObject);
             }
-            else
-            {
-                // Logic to potentially store Health later
-            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerInRange = false;
         }
     }
 
