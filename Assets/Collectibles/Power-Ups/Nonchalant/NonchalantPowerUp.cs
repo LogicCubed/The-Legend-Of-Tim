@@ -11,7 +11,7 @@ public class NonchalantPowerUp : MonoBehaviour
 
     public PopUpManager popUpManager;
     private string pickupTitle = "Nonchalant";
-    private string pickupText = "20% Chance to not take Damage!";
+    private string pickupText = "Chance to negate Damage!";
     public Sprite itemSprite;
     public Sprite itemGrade;
 

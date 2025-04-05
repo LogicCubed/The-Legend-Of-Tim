@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
     public float PlayerLuck;
 
     public int DamageToTake;
+    public float KnockbackDealt;
 
     public TMP_Text PlayerDamageText;
     public TMP_Text PlayerAttackSpeedText;
@@ -26,16 +27,20 @@ public class PlayerStats : MonoBehaviour
         // Default Player Attack Speed is ???
         PlayerAttackSpeed = 0.0f;
 
-        // Default Player Speed is 15
-        PlayerSpeed = 15f;
+        // Default Player Speed is 12
+        PlayerSpeed = 12f;
 
         // Default Player Accuracy is 50
         PlayerAccuracy = 50f;
 
-        // Default Player Luck is 0
-        PlayerLuck = 0.0f;
+        // Default Player Luck is 25
+        PlayerLuck = 100f;
 
+        // Default Player Damage Taken is 1
         DamageToTake = 1;
+
+        //Default Player Knockback Dealt is 3 (SUBJECT TO CHANGE)
+        KnockbackDealt = 2f;
     }
 
     private void Update()
@@ -45,17 +50,18 @@ public class PlayerStats : MonoBehaviour
 
     public void UpdateStats()
     {
-        float percentageDamage = PlayerDamage / 10f * 100f;
+        float percentageDamage = PlayerDamage / 10.0f * 100f;
         PlayerDamageText.text = percentageDamage.ToString("F1") + "%";
 
         PlayerAttackSpeedText.text = PlayerAttackSpeed.ToString() + "%";
 
-        float percentageSpeed = PlayerSpeed / 15.0f * 100f;
+        float percentageSpeed = PlayerSpeed / 12.0f * 100f;
         PlayerSpeedText.text = percentageSpeed.ToString("F1") + "%";
 
         float percentageAccuracy = PlayerAccuracy / 50.0f * 100f;
         PlayerAccuracyText.text = PlayerAccuracy.ToString() + "%";
 
+        float percentageLuck = PlayerLuck / 100.0f * 100f;
         PlayerLuckText.text = PlayerLuck.ToString() + "%";
     }
 }

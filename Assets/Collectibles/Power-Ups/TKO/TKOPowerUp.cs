@@ -9,9 +9,11 @@ public class TKOPowerUp : MonoBehaviour
     private float startY;
     private Transform shadow;
 
+    public PlayerStats playerStats;
+
     public PopUpManager popUpManager;
-    private string pickupTitle = "TKO";
-    private string pickupText = "Tim Knock-Out! Deal More Knockback!";
+    private string pickupTitle = "Tim Knock-Out";
+    private string pickupText = "Deal More Knockback!";
     public Sprite itemSprite;
     public Sprite itemGrade;
 
@@ -20,6 +22,9 @@ public class TKOPowerUp : MonoBehaviour
     {
         startY = transform.position.y;
         shadow = transform.Find("DropShadow");
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        playerStats = player.GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -34,6 +39,7 @@ public class TKOPowerUp : MonoBehaviour
         if(PlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             popUpManager.ShowPopUp(pickupTitle, pickupText, itemSprite, itemGrade);
+            playerStats.KnockbackDealt += 1f;
             Destroy(gameObject);
         }
     }

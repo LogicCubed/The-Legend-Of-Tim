@@ -13,6 +13,9 @@ public class HealthPowerUp : MonoBehaviour
     {
         startY = transform.position.y;
         shadow = transform.Find("DropShadow");
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame

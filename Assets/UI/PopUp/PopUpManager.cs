@@ -15,6 +15,8 @@ public class PopUpManager : MonoBehaviour
     private float animationDuration = 0.1f;
     private Vector2 originalPosition;
 
+    public LevelManager levelManager;
+
     void Start()
     {
         originalPosition = PopUp.GetComponent<RectTransform>().anchoredPosition;
@@ -28,6 +30,7 @@ public class PopUpManager : MonoBehaviour
         PopUpGrade.sprite = ItemGrade;
 
         PopUp.SetActive(true);
+        levelManager.StartCoroutine(levelManager.HandleLevelBarAnimation());
         StartCoroutine(HandlePopUpAnimation());
     }
 
